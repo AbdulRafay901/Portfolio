@@ -1,5 +1,5 @@
 import "./Services.css"
-import { FaCode, FaPalette, FaLaptopCode } from "react-icons/fa";
+import { FaCode, FaPalette, FaLaptopCode, FaShoppingCart, FaWordpress } from "react-icons/fa";
 
 function Services(){
 
@@ -13,21 +13,24 @@ function Services(){
       <div className="services-container">
 
         <div className="service-card">
-          <FaCode className="service-icon"/>
-          <h3>Frontend Development</h3>
-          <p>I build modern and interactive websites using React, HTML, CSS, JavaScript, Node.Js, Php, MySql and Next.js.</p>
-        </div>
-
-        <div className="service-card">
-          <FaPalette className="service-icon"/>
-          <h3>UI Design</h3>
-          <p>Creating clean and modern user interfaces with focus on design and usability.</p>
-        </div>
-
-        <div className="service-card">
           <FaLaptopCode className="service-icon"/>
-          <h3>Web Applications</h3>
-          <p>Building modern web applications with dynamic features and smooth performance.</p>
+          <h3>Web Development</h3>
+          <p>From idea to live website.
+Building modern, fast and responsive websites using HTML, CSS, Bootstrap and JavaScript with PHP & MySQL backend integration — from simple landing pages to full dynamic web applications.</p>
+        </div>
+
+        <div className="service-card">
+          <FaShoppingCart className="service-icon"/>
+          <h3>E-Commerce Development</h3>
+          <p>Sell online, the right way.
+Creating fully functional online stores with product management, shopping cart, order tracking, admin panel and email notifications using PHP & MySQL.</p>
+        </div>
+
+        <div className="service-card">
+          <FaWordpress className="service-icon"/>
+          <h3>Wordpress Development</h3>
+          <p>Beautiful sites, zero hassle.
+Building responsive WordPress websites with custom themes and plugins — clean layouts, smooth UI and great user experience across all devices..</p>
         </div>
 
       </div>

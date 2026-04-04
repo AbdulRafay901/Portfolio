@@ -25,7 +25,7 @@ function About() {
             {/* FRONT IMAGE */}
 
             <div className="photo-front">
-              <img src="img3.png" alt="" />
+              <img src="Anime portrait of a calm teen.png" alt="" />
             </div>
 
             {/* BACK IMAGE */}
@@ -40,12 +40,8 @@ function About() {
 
         <div className="text-about">
           <p>
-            Hi, I'm Amine, a passionate Frontend Developer and Computer Science student.
-            I enjoy building modern, responsive, and interactive web interfaces that provide
-            a great user experience. I focus on clean design, smooth animations, and writing
-            efficient code using modern web technologies. I'm always learning new tools and
-            improving my skills to create better digital products. My goal is to combine
-            creativity with technology to build websites that are both beautiful and functional.
+             Hi, I'm Abdul Rafay — a Full Stack Web Developer who loves turning ideas into real websites. I enjoy both frontend and backend development, and I'm always pushing myself to get better. I care about how things look, how they work, and how they feel to use. For me, coding isn't just a skill — it's something I genuinely enjoy doing.
+My goal? Simple — become one of the best developers out there. Still learning, still building, but fully committed to getting there.
           </p>
         </div>
 

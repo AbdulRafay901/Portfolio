@@ -25,41 +25,44 @@ function Contact() {
 
           <div className="info-item">
             <FaEnvelope className="contact-icon"/>
-            <span>aminehamzaoui1925@gmail.com</span>
+            <span>abdulrafay700000@gmail.com</span>
           </div>
 
           <div className="info-item">
             <FaPhone className="contact-icon"/>
-            <span>+213 XX XX XX XX</span>
+            <span>+92 3493332883</span>
           </div>
 
           <div className="info-item">
             <FaMapMarkerAlt className="contact-icon"/>
-            <span>Algeria</span>
+            <span>Pakistan</span>
           </div>
 
         </div>
 
         {/* RIGHT FORM */}
 
-        <form className="contact-form">
-
+        <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
+           <input type="hidden" name="access_key" value="00700cfd-7a65-4207-8819-80b142351211"></input>
           <input
             type="text"
             placeholder="Your Name"
             required
+            name="name"
           />
 
           <input
             type="email"
             placeholder="Your Email"
             required
+            email="email"
           />
 
           <textarea
             placeholder="Your Message"
             rows="6"
             required
+            name="message"
           ></textarea>
 
           <button type="submit">

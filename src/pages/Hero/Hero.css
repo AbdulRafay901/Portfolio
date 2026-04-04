@@ -1,21 +1,35 @@
-.hero{
-position:relative;
-width:100%;
-height:100vh;
-overflow:hidden;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 900px; /* Fixed height for large screens to maintain design */
+  overflow: hidden;
+  animation: hero 5s linear infinite;
+  transition: 0.3s;
 }
 
+@keyframes hero{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 
-.buttn{
+.buttn {
   position: absolute;
   top: 85%;
   left: 20%;
   transform: translate(-50%, -50%);
   display: flex;
   gap: 20px;
+  z-index: 10;
 }
 
-.buttn a{
+.buttn a {
   text-decoration: none;
   padding: 12px 30px;
   border-radius: 8px;
@@ -24,12 +38,41 @@ overflow:hidden;
   color: #2b2929;
   border: 2px solid #373737;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
 }
 
-
-.buttn a:hover{
+.buttn a:hover {
   background: #777777;
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 100vh; /* Better for mobile to cover the whole screen */
+  }
+
+  .buttn {
+    left: 50%;
+    top: 80%;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .buttn a {
+    padding: 10px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
 }

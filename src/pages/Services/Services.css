@@ -31,6 +31,7 @@
     display:flex;
     justify-content:center;
     gap:40px;
+    flex-wrap: wrap;
 }
 
 
@@ -41,6 +42,7 @@
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
     transition:0.3s;
+    background: #fff;
 }
 
 .service-card:hover{
@@ -65,4 +67,36 @@
 .service-card p{
     color:#343232;
     line-height:1.6;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 992px) {
+    .services-container {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
 }

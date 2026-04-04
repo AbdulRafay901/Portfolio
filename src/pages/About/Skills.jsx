@@ -1,64 +1,46 @@
 import "./Skills.css";
 
 import {
-FaHtml5,
-FaCss3Alt,
-FaJs,
-FaReact,
-FaGitAlt,
-FaGithub,
-FaFigma,
-FaNodeJs,
-FaJava
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaWordpress,
 } from "react-icons/fa";
 
 import {
-SiUnity,
-SiTailwindcss,
-SiFirebase,
-SiMongodb,
-SiExpress,
-SiMysql,
-SiPhp
+  SiBootstrap,
+  SiMysql,
+  SiPhp,
+  SiLaravel,
 } from "react-icons/si";
 
-function Skills(){
+function Skills() {
+  return (
+    <div className="skills">
+      <div className="skills-slider">
+        <div className="skills-track">
+          <FaHtml5 />
+          <FaCss3Alt />
+          <FaJs />
+          <SiBootstrap />
+          <SiPhp />
+          <SiMysql />
+          <SiLaravel />
+          <FaWordpress />
 
-return(
-
-<div className="skills">
-<div className="skills-slider">
-<div className="skills-track">
-
-<FaHtml5/>
-<FaCss3Alt/>
-<FaJs/>
-<FaReact/>
-
-<FaJava/>
-<SiMysql/>
-<SiPhp/>
-
-<FaNodeJs/>
-<SiExpress/>
-<SiMongodb/>
-
-<FaGitAlt/>
-<FaGithub/>
-<FaFigma/>
-
-<SiUnity/>
-<SiTailwindcss/>
-<SiFirebase/>
-
-</div>
-
-</div>
-
-</div>
-
-)
-
+          {/* Duplicate for infinite scroll effect */}
+          <FaHtml5 />
+          <FaCss3Alt />
+          <FaJs />
+          <SiBootstrap />
+          <SiPhp />
+          <SiMysql />
+          <SiLaravel />
+          <FaWordpress />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Skills;

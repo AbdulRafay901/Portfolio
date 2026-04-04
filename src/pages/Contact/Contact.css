@@ -131,3 +131,42 @@
     background:#444;
     transform:translateY(-3px);
 }
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 992px) {
+    .contact-container {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 20px;
+        margin: 60px auto;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info-item {
+        justify-content: center;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
