@@ -6,6 +6,10 @@ import img3 from "../../assets/images/Rock.png";
 import img4 from "../../assets/images/Lavisha.png";
 import img5 from "../../assets/images/Tastyc.png";
 import img6 from "../../assets/images/Ewebot.png";
+import img7 from "../../assets/images/wordpress1.png";
+import img8 from "../../assets/images/wordpress2.png";
+import video1 from "../../assets/images/video1.mp4";
+import video2 from "../../assets/images/video2.mp4";
 
 const projects = [
   {
@@ -65,7 +69,7 @@ export default function Project() {
     <section className="project reveal" id="project">
 
       <div className="title">
-        <h2>Project</h2>
+        <h2>Projects</h2>
       </div>
 
       <div className="projects-container">
@@ -101,6 +105,52 @@ export default function Project() {
           </div>
 
         ))}
+
+        <div className="project-card" key="">
+
+            <img src={img7} alt="" />
+
+            <h3>BIBOT – Digital Platform Website</h3>
+
+            <p>A modern digital platform website for BIBOT, featuring a clean layout, engaging hero section, and a robot-themed design. Includes smooth navigation, clear call-to-action buttons, and a well-structured layout to showcase the platform and its services.</p>
+
+            <div className="skills">
+                  <a href="#" >WordPress</a>
+                  <a href="#" >Elementor</a>
+            </div>
+
+            <div className="btns">
+
+              <a href={video1} target="_blank" className="btn">
+                <i className="fas fa-external-link-alt"></i> Live Demo
+              </a>
+
+            </div>
+
+          </div>
+
+          <div className="project-card" key="">
+
+            <img src={img8} alt="" />
+
+            <h3>Pine – Creative Agency Website</h3>
+
+            <p>A modern and stylish website for a creative agency, featuring a dark theme, minimal navigation, and a bold hero section. Designed to showcase creative services and portfolios with an elegant layout, smooth visual elements, and a responsive design across all devices.</p>
+
+            <div className="skills">
+                  <a href="#" >WordPress</a>
+                  <a href="#" >Elementor</a>
+            </div>
+
+            <div className="btns">
+
+              <a href={video2} target="_blank" className="btn">
+                <i className="fas fa-external-link-alt"></i> Live Demo
+              </a>
+
+            </div>
+
+          </div>
 
       </div>
 
